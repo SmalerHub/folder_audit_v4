@@ -1,6 +1,7 @@
 # Folder Audit – V4
 
 **Safe file auditing and duplicate verification for IT professionals**
+(Source code available on request or as part of paid engagements)
 
 ## Purpose
 
@@ -145,3 +146,4 @@ Python Utility Development * Automation * Data Analysis
 Uk Citizen / Spain-based / Remote
 LinkedIn: https://www.linkedin.com/in/darren-williamson3/
 ---
+
