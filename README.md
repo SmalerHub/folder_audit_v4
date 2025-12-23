@@ -1,2 +1,147 @@
-# folder_audit_v4
-Safe, read-only file audit and duplicate verification tool for IT professionals. Supports recursive scanning, SHA-256 confirmation, progress + ETA, and CSV/JSON reporting. Designed for cautious, evidence-based storage analysis.
+# Folder Audit – V4
+
+**Safe file auditing and duplicate verification for IT professionals**
+
+## Purpose
+
+**Folder Audit** is a command-line utility designed for **IT technicians, system administrators, and technical support engineers** who need to audit storage and identify duplicate files **without risking data loss**.
+
+It is intentionally **read-only** and evidence-focused, making it suitable for:
+
+* shared systems
+* external drives
+* network storage
+* customer environments
+* regulated or production systems
+
+---
+
+## Typical Use Cases
+
+* Auditing external or legacy drives before cleanup
+* Identifying duplicate files on shared storage
+* Supporting storage reduction decisions with evidence
+* Preparing reports for stakeholders or clients
+* Verifying duplicates safely before any manual action
+
+---
+
+## Key Capabilities
+
+* Recursive or targeted folder scanning
+* File metadata collection (size, timestamps, paths)
+* **TWO-STAGE DUPLICATE DETECTION**:
+  * Size-based candidate detection
+  * SHA-256 verification for confirmed duplicates
+* Grouped duplicate reporting
+* Real-time hashing progress with elapsed time and ETA
+* CSV output for reports and spreadsheets
+* JSON output for automation and tooling
+* Zero file modification (read-only operation)
+
+---
+
+## How Duplicate Verification Works
+
+1. **Scan Phase**
+   Files are scanned and basic metadata collected.
+
+2. **Candidate Identification**
+   Files with identical sizes are flagged as possible duplicates.
+
+3. **Verification Phase (Optional)**
+   Only candidate files are hashed using SHA-256.
+
+4. **Confirmation**
+   Files with matching hashes are marked as confirmed duplicates and grouped.
+
+This approach balances **performance, safety, and accuracy**.
+
+---
+
+## Example Usage
+
+### Safe audit only (no hashing)
+python folder_audit_v4.py /data/archive --recursive
+
+### Full verification with hashing
+python folder_audit_v4.py /data/archive --recursive --hash
+
+### Generate CSV and JSON evidence
+python folder_audit_v4.py /data/archive --hash --json-output audit.json
+
+---
+
+## Output
+
+### CSV Report
+
+Suitable for:
+
+* documentation
+* spreadsheets
+* client reports
+
+Includes:
+
+* file paths
+* sizes
+* timestamps
+* duplicate status
+* duplicate group ID
+* SHA-256 hash (when verified)
+
+### JSON Report
+
+Suitable for:
+
+* automation
+* scripting
+* integration with other tools
+
+Includes:
+
+* scan metadata
+* summary statistics
+* full record set
+
+---
+
+## Safety Guarantees
+
+* No files are deleted, moved, or modified
+* Hashing is opt-in
+* Duplicate confirmation is deterministic
+* Designed for cautious, professional use
+
+---
+
+## Status
+
+**Stable / Frozen**
+
+Verified against real-world datasets.
+SHA-256 output validated against external tools.
+
+---
+
+## Future Direction
+
+Planned enhancements (opt-in and controlled):
+
+* Summary-only reporting
+* JSON-only mode
+* Integration-friendly schemas
+* Optional destructive actions with explicit safeguards
+* UI wrapper (CLI-first remains the core)
+
+---
+
+## Author
+
+Developed as a portfolio project focused on **real-world technical workflows**, safe tooling, and evidence-based decision support.
+Darren Williamson
+Python Utility Development * Automation * Data Analysis
+Uk Citizen / Spain-based / Remote
+LinkedIn: https://www.linkedin.com/in/darren-williamson3/
+---
